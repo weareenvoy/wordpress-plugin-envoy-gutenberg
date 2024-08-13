@@ -1,0 +1,29 @@
+{
+  "name": "envoy/envoy-gutenberg",
+  "description": "WeAreEnvoy's WordPress plugin to add custom Gutenberg blocks",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0+",
+  "authors": [{
+    "name": "WeAreEnvoy",
+    "email": "WebAdmin@WeAreEnvoy.com"
+  }],
+  "config": {
+    "optimize-autoloader": true,
+    "process-timeout": 0
+  },
+  "autoload": {
+    "psr-4": {
+      "EmailRouting\\": "src/"
+    },
+    "classmap": [
+      "src/"
+    ]
+  },
+  "scripts": {
+  },
+  "require": {
+    "php": "^7.3||^8.0"
+  },
+  "require-dev": {
+  }
+}
